@@ -1,0 +1,48 @@
+site_name: App Exemple Docs
+
+nav:
+    - "index.md"
+    - "contributing.md"
+  
+theme:
+    name: 'material'
+    palette:
+        primary: 'Teal'
+        accent: 'Deep Orange'
+    feature:
+        tabs: true
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: true
+
+    # - pymdownx.arithmatex
+    # - pymdownx.betterem:
+    #     smart_enable: all
+    # - pymdownx.caret
+    # - pymdownx.critic
+    # - pymdownx.details
+    # - pymdownx.emoji:
+    #     emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    # - pymdownx.inlinehilite
+    # - pymdownx.magiclink
+    # - pymdownx.mark
+    # - pymdownx.smartsymbols
+    - pymdownx.superfences
+    # - pymdownx.tasklist:
+    #     custom_checkbox: true
+    # - pymdownx.tilde
+
+plugins:
+    - search
+    - git-revision-date-localized:
+        type: datetime
+
+# extra_css:
+#   - 'stylesheets/extra.css'
+extra:
+  version:
+    provider: mike
